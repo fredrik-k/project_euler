@@ -14,6 +14,7 @@ def findDivisor(n) :
 	for i in range(2, int(floor(upperLimit))) :
 		if n % i == 0 : 
 			return i
+	return -1
 
 def findPrimeFactors(n, primeList = []) :
 	divisor = findDivisor(n)
